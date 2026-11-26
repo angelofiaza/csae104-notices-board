@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Notices</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <img src="image/rislogo.png" alt="RIS logo">
+    <h1>Rosario Integrated School</h1> 
+
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#notices">Notices</a></li>
+        <li><a href="#deadlines">Deadlines</a></li>
+        <li><a href="#submit">Post a notice</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="notices">
+      <h2>Campus Notices</h2>
+      <div class="notices">
+        <article class="notice">
+          <h3>Clean Up Drive</h3>
+          <p class="meta">
+            <time datetime="2026-10-12">12 October 2026</time> · <span class="tag">Academic</span>
+          </p>
+          <p>Every section is required to clean their rooms and their areas to promote the cleanliness and odorliness of our school.</p>
+        </article>
+
+        <article class="notice">
+          <h3>Students inside the campus past class hours</h3>
+          <p class="meta">
+            <time datetime="2026-10-12">12 October 2026</time> · <span class="tag">General</span>
+          </p>
+          <p>Students are not allowed to stay inside the campus past class hours without written approval from the Chancellor.</p>
+        </article>
+
+        <article class="notice">
+          <h3>School's Asychronous Class Arrangement</h3>
+          <p class="meta">
+            <time datetime="2026-10-12">12 October 2026</time> · <span class="tag">General</span>
+          </p>
+          <p>The classes will be conducted Asychronous due to the inspection of our School.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="submit">
+      <h2>Post a notice</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="title">Title</label><br>
+          <input type="text" id="title" name="title" required maxlength="100">
+        </p>
+        <p>
+          <label for="category">Category</label><br>
+          <select id="category" name="category">
+            <option value="academic">Academic</option>
+            <option value="event">Event</option>
+            <option value="general">General</option>
+          </select>
+        </p>
+        <p>
+          <label for="date">Date</label><br>
+          <input type="date" id="date" name="date">
+        </p>
+        <p>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </p>
+        <p>
+          <label for="email">Your email</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <button type="submit">Post notice</button>
+      </form>
+    </section>
+  </main>
+
+  <aside id="deadlines">
+    <h2>Upcoming deadlines</h2>
+    <table>
+      <caption>Key dates</caption>
+      <thead>
+        <tr><th scope="col">Activity</th><th scope="col">Date</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>STE Examination</td><td>23 December 2026</td></tr>
+        <tr><td>Sports Fest Registration</td><td>3 January 2027</td></tr>
+      </tbody>
+    </table>
+  </aside>
+
+  <footer>
+    <p>We Hone the Potentials of Our Learners — Choose Excellence, Choose RIS</p>
+  </footer>
+</body>
+
+</html>
